@@ -12,3 +12,7 @@ dist/*
 *.exe
 *.swp
 *.DS_Store
+dist/
+*.pyo
+uPyLoader.py
+uPyLoader.spec

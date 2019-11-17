@@ -49,7 +49,7 @@ def flash(port, firmware_file, erase_flash):
 
     # Write flash
     esptool.write_flash(esp, args)
-    print "Done writing new firmware."
+    print("Done writing new firmware.")
 
 if __name__ == '__main__':
     try:
@@ -61,10 +61,10 @@ if __name__ == '__main__':
         args = parser.parse_args()
 
         if args.debug:
-            print "Character test: "
+            print("Character test: ")
             for i in range(0, 256):
-                print chr(i),
-            print ""
+                print(chr(i),)
+            print("")
         flash(args.port, args.fw, args.erase)
     except Exception as e:
         exit(1)
